@@ -864,41 +864,61 @@ img {
 }
 
 
-@media (max-width: 480px) {
+
+ @media (max-width: 480px) {
   .user-info-name {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
+
   .user-info-subheading {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
+
   .btn {
     width: 100%;
     padding: 0.8rem;
   }
+
   .nav-items div {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .page-header {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
-
+  
   .project-card {
-    height: 200px;
-    background-size: contain !important;
-    background-position: center !important;
+    width: 100%;
+    height: 180px;
+    background-size: cover !important;
+    background-position: center center !important;
+    margin: 0 !important;
   }
 
+  .project-content {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
 
+  .project-heading {
+    font-size: 1.4rem;
+  }
+
+  .project-sub-heading,
+  .project-subHeading {
+    font-size: 0.9rem;
+  }
+
+  /* Hide background text */
   .skill-fade-text {
     display: none;
   }
 
- 
+  /* Fix footer layout */
   .footer-wrapper {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     text-align: center;
     align-items: center;
   }
