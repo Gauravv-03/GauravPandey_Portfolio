@@ -905,6 +905,62 @@ img {
 }
 
 
+@media (max-width: 360px) {
+  .user-info-name {
+    font-size: 1.1rem;
+  }
+
+  .user-info-subheading {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .nav-items div {
+    font-size: 0.85rem;
+  }
+
+  .project-card {
+    width: 100%;
+    height: 160px;
+    background-size: cover !important;
+    background-position: center !important;
+    margin: 0 !important;
+  }
+
+  .project-content {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .project-heading {
+    font-size: 1.2rem;
+  }
+
+  .project-sub-heading,
+  .project-subHeading {
+    font-size: 0.85rem;
+  }
+
+  .form {
+    padding: 0 0.5rem;
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
+
 
 
   
