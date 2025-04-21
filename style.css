@@ -662,70 +662,6 @@ footer{
 
 
 
-/* 
-@media (max-width:1300px) {
-  .page-header {
-    padding-top: 30px;
-    color: var(--bgOrange);
-    text-align: center;
-    font-size: 40px;
-  }
-  .project-container {
-    padding: 5px;
-    margin: 10px;
-    gap: 60px;
-  }
-  .project-card {
-    width: 100%;
-    height: 300px;
-  }
-  .project-card {
-    background-size: cover;
-    background-position: center;
-  }
-  .project-content {
-    scale: 0.5;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-  }
-  .project-content-left {
-    left: 0;
-  }
-  .project-heading {
-    font-size: 40px;
-    width: 100%;
-  }
-  .project-sub-heading {
-    width: 100%;
-  }
-  #project2 {
-    margin-left: 0;
-  }
-  #project4 {
-    margin-left: 0;
-  }
-  .project-skill-container {
-    width: 100%;
-  }
-  .project-skill {
-    width: 35px;
-  }
-  .project-card:hover .project-number {
-    display: none;
-  }
-  .project-card:hover .project-content {
-    scale: 0.55;
-  }
-}   */
-
-/* gdgdsgsdgdsgds */
-
-
-
-
-
 img {
   max-width: 100%;
   height: auto;
@@ -757,29 +693,23 @@ img {
   .project-container {
     gap: 4rem;
   }
-
-  .faded-text {
-    display: none;
-  }
-
-
-  .page-header {
-    font-size: 4rem;
-  }
-
+ 
+  .faded-text,
   .skill-fade-text {
     display: none;
+  }
+  .page-header {
+    font-size: 4rem;
   }
 }
 
 
 @media (max-width: 768px) {
+ 
   .container {
     width: 90%;
     padding: 0 1rem;
   }
-
- 
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -789,8 +719,6 @@ img {
     flex-direction: column;
     gap: 1rem;
   }
-
-  
   .hero-section {
     flex-direction: column;
     text-align: center;
@@ -808,35 +736,50 @@ img {
     width: 100%;
     font-size: 1.1rem;
   }
-
- 
   .project-container {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
   }
   .project-card {
-    width: 100%;
-    margin-left: 0 !important;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 0 2rem 0 !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  .project-skills-container {
+    display: none !important;
   }
   .project-content {
-    position: static;
-    transform: none;
-    padding: 1.5rem;
+    position: relative !important;
+    bottom: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    padding: 1rem !important;
   }
- 
-  .project-sub-heading,
-  .project-subHeading {
-    width: 100%;
-    font-size: 1rem;
+  .project-heading {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
   }
-
-
-  .skill-fade-text {
-    display: none;
+  .project-subHeading,
+  .project-sub-heading {
+    font-size: 1rem !important;
+    line-height: 1.3rem !important;
   }
-
+  .project-content p {
+    font-size: 0.9rem !important;
+    overflow-wrap: break-word;
+  }
+  
+  .user-btn {
+    display: inline-block !important;
+    width: auto !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+    white-space: normal !important;
+    margin-top: 1rem !important;
+  }
 
   .skill-container {
     flex-direction: column;
@@ -847,145 +790,140 @@ img {
   .skill-container-right {
     width: 100%;
   }
-
-
   .form {
     width: 100%;
     margin: 2rem auto;
     padding: 0 1rem;
   }
-
-
+ 
+  footer {
+    padding: 3rem 1rem !important;
+  }
   .footer-wrapper {
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+    text-align: center !important;
+  }
+  .footer-left,
+  .footer-right {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+  }
+  .footer-left a,
+  .footer-right a {
+    font-size: 1.2rem !important;
+  }
+ 
+  .project-content-left,
+  .project-content-right {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    padding: 1rem !important;
+    text-align: left !important;
   }
 }
 
 
-
- @media (max-width: 480px) {
+@media (max-width: 480px) {
   .user-info-name {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
-
   .user-info-subheading {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
-
   .btn {
     width: 100%;
     padding: 0.8rem;
   }
-
   .nav-items div {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
-
   .page-header {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
-
-  
   .project-card {
-    width: 100%;
-    height: 180px;
-    background-size: cover !important;
-    background-position: center center !important;
-    margin: 0 !important;
+    height: 200px;
   }
-
-  .project-content {
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-
   .project-heading {
-    font-size: 1.4rem;
+    font-size: 1.3rem !important;
+    line-height: 1.6rem !important;
   }
-
-  .project-sub-heading,
-  .project-subHeading {
-    font-size: 0.9rem;
+  .project-subHeading,
+  .project-sub-heading {
+    font-size: 0.9rem !important;
+    line-height: 1.2rem !important;
   }
-
-  /* Hide background text */
-  .skill-fade-text {
-    display: none;
+  .project-content {
+    padding: 0.8rem !important;
+    font-size: 0.8rem !important;
   }
-
-  /* Fix footer layout */
+  .user-btn {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.8rem !important;
+  }
+  footer {
+    padding: 2rem 0.5rem !important;
+  }
   .footer-wrapper {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-    align-items: center;
+    gap: 1rem !important;
+  }
+  .footer-left a,
+  .footer-right a {
+    font-size: 1rem !important;
+  }
+  .project-content-left,
+  .project-content-right {
+    padding: 0.8rem !important;
   }
 }
 
 
 @media (max-width: 360px) {
   .user-info-name {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
-
   .user-info-subheading {
     font-size: 1rem;
     line-height: 1.2rem;
   }
-
   .btn {
-    width: 100%;
-    font-size: 0.9rem;
-    padding: 0.6rem;
+    padding: 0.6rem !important;
+    font-size: 0.8rem!important;
   }
-
-  .nav-items div {
-    font-size: 0.85rem;
-  }
-
   .project-card {
-    width: 100%;
-    height: 160px;
-    background-size: cover !important;
-    background-position: center !important;
-    margin: 0 !important;
+    height: 160px !important;
   }
-
-  .project-content {
-    padding: 0.8rem;
-    font-size: 0.85rem;
-  }
-
   .project-heading {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
+    line-height: 1.4rem !important;
   }
-
-  .project-sub-heading,
-  .project-subHeading {
-    font-size: 0.85rem;
+  .project-subHeading,
+  .project-sub-heading {
+    font-size: 0.8rem !important;
+    line-height: 1rem !important;
   }
-
-  .form {
-    padding: 0 0.5rem;
-    width: 100%;
+  .project-content p {
+    font-size: 0.75rem !important;
   }
-
+  .user-btn {
+    padding: 0.3rem 0.6rem !important;
+    font-size: 0.75rem !important;
+  }
   .footer-wrapper {
-    flex-direction: column;
-    gap: 0.8rem;
-    align-items: center;
-    text-align: center;
-    font-size: 0.9rem;
+    gap: 0.8rem !important;
+  }
+  .footer-left a,
+  .footer-right a {
+    font-size: 0.9rem !important;
+  }
+  .project-content-left,
+  .project-content-right {
+    padding: 0.6rem !important;
+    font-size: 0.85rem !important;
   }
 }
-
-
-
-  
-
-
-
-
-  
